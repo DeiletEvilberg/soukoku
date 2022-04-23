@@ -7,22 +7,22 @@ let menuImg4 = document.querySelector('.menuItem4');
 
 menuImg1.addEventListener('click', function(){
     let varVideo = document.querySelector('#videoSlider');
-    varVideo.src = '/video/chuuya.mp4';
+    varVideo.src = 'video/chuuya.mp4';
 });
 
 menuImg2.addEventListener('click', function(){
     let varVideo = document.querySelector('#videoSlider');
-    varVideo.src = '/video/dazai.mp4';
+    varVideo.src = 'video/dazai.mp4';
 });
 
 menuImg3.addEventListener('click', function(){
     let varVideo = document.querySelector('#videoSlider');
-    varVideo.src = '/video/soukoku (2).mp4';
+    varVideo.src = 'video/soukoku (2).mp4';
 });
 
 menuImg4.addEventListener('click', function(){
     let varVideo = document.querySelector('#videoSlider');
-    varVideo.src = '/video/fyodor.mp4';
+    varVideo.src = 'video/fyodor.mp4';
 });
 
 // title focus tabs
@@ -38,11 +38,11 @@ function changeTitle(icon, text){
 
 window.onblur = () => {
     timer = setTimeout (() => {
-        changeTitle('./favicon (1).ico', 'Не хочешь...Ну и не нужно');
+        changeTitle('.favicon (1).ico', 'Не хочешь...Ну и не нужно');
     }, 3000)
 }
 
 window.onfocus = () => {
     clearTimeout(timer);
-    changeTitle('./favicon.ico', titleOld);
+    changeTitle('.favicon.ico', titleOld);
 }
